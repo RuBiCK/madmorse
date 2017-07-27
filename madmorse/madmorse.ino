@@ -9,12 +9,12 @@
 //**************************************************//
 //   Type the String to Convert to Morse Code Here  //
 //**************************************************//
-char stringToMorseCode[] = "password";
+char stringToMorseCode[] = "Y2TF5";
 
 // Create variable to define the output pins
-int led12 = 12;      // blink an led on output 12
+int led12 = 2;      // blink an led on output 12
 int led6 = 6;        // blink an led on output 6
-int audio8 = 8;      // output audio on pin 8
+int audio8 = 3;      // output audio on pin 8
 int note = 1200;      // music note/pitch
 
 /*
@@ -30,7 +30,7 @@ int note = 1200;      // music note/pitch
 	  Pause between words = Dot length x 7
   
 */
-int dotLen = 100;     // length of the morse code 'dot'
+int dotLen = 200;     // length of the morse code 'dot'
 int dashLen = dotLen * 3;    // length of the morse code 'dash'
 int elemPause = dotLen;  // length of the pause between elements of a character
 int Spaces = dotLen * 3;     // length of the spaces between characters
