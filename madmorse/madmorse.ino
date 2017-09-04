@@ -55,6 +55,7 @@ void loop()
 	tmpChar = toLowerCase(tmpChar);
 	// Call the subroutine to get the morse code equivalent for this character
 	GetChar(tmpChar);
+        delay(500);//delay between chars
   }
   
   // At the end of the string long pause before looping and starting again
@@ -193,8 +194,8 @@ void GetChar(char tmpChar)
 		MorseDot();
 		LightsOff(elemPause);
 		break;
-      case 'm':
-	    MorseDash();
+	  case 'm':
+	        MorseDash();
 		LightsOff(elemPause);
 		MorseDash();
 		LightsOff(elemPause);
@@ -309,6 +310,140 @@ void GetChar(char tmpChar)
 		MorseDot();
 		LightsOff(elemPause);
 		break;
+          case '0':
+		MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+		MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+		MorseDash();
+                LightsOff(elemPause);
+                break;
+          case '1':
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                break;
+          case '2':
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                break;
+          case '3':
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                break;
+          case '4':
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                break;
+          case '5':
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                break;
+          case '6':
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                break;
+          case '7':
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                break;
+          case '8':
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                break;
+          case '9':
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDot();
+                LightsOff(elemPause);
+                break;
+          case '0':
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                MorseDash();
+                LightsOff(elemPause);
+                break;
+
+
 	  default: 
 		// If a matching character was not found it will default to a blank space
 		LightsOff(Spaces);			
