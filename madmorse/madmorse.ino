@@ -309,17 +309,17 @@ void GetChar(char tmpChar)
 		LightsOff(elemPause);
 		MorseDot();
 		LightsOff(elemPause);
-		break;
+		break; 
           case '0':
-		MorseDash();
+		            MorseDash();
                 LightsOff(elemPause);
                 MorseDash();
                 LightsOff(elemPause);
-		MorseDash();
+		            MorseDash();
                 LightsOff(elemPause);
                 MorseDash();
                 LightsOff(elemPause);
-		MorseDash();
+		            MorseDash();
                 LightsOff(elemPause);
                 break;
           case '1':
@@ -430,18 +430,7 @@ void GetChar(char tmpChar)
                 MorseDot();
                 LightsOff(elemPause);
                 break;
-          case '0':
-                MorseDash();
-                LightsOff(elemPause);
-                MorseDash();
-                LightsOff(elemPause);
-                MorseDash();
-                LightsOff(elemPause);
-                MorseDash();
-                LightsOff(elemPause);
-                MorseDash();
-                LightsOff(elemPause);
-                break;
+
 
 
 	  default: 
